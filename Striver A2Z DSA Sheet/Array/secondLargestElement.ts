@@ -1,8 +1,9 @@
 // Here are many approaches like 
 
-// 1) Sort and then find the second largest
-// 2) Do two loop first one is to find largest and second one is the smallest then large but large then current.
-// 3) Take 2 variable Large and Second Large
+// 1) Sort and then find the second largest => O(nlogn) (time)
+// 2) Do two loop first one is to find largest and second one is the smallest then large but large then current. 
+// => o(n) + o(n) => 2o(n) is equivalent to o(n) (time)
+// 3) Take 2 variable Large and Second Large => o(n) (time)
 
 // ? second approach
 
