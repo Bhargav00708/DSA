@@ -1,7 +1,7 @@
-// Here are many approaches like 
+// Here are many approaches like
 
 // 1) Sort and then find the second largest => O(nlogn) (time)
-// 2) Do two loop first one is to find largest and second one is the smallest then large but large then current. 
+// 2) Do two loop first one is to find largest and second one is the smallest then large but large then current.
 // => o(n) + o(n) => 2o(n) is equivalent to o(n) (time)
 // 3) Take 2 variable Large and Second Large => o(n) (time)
 
@@ -29,30 +29,27 @@
 // console.log("Second smallest is " + second_small);
 // console.log("Second largest is " + second_large);
 
-
 //? third approach
 
-const nums:Array<number> = [1,0,-9,8,67,69,70];
-let large:number = -Infinity;
-let second_largest:number = nums[0];
-let small:number = Infinity;
-let second_smallest:number = nums[0];
+const nums: Array<number> = [1, 0, -9, 8, 67, 69, 70];
+let large: number = -Infinity;
+let second_largest: number = nums[0];
+let small: number = Infinity;
+let second_smallest: number = nums[0];
 
-for(let i = 0; i < nums.length; ++i){
-    if(nums[i] > large){
-        second_largest = large;
-        large = nums[i];
-    }
-    else if(nums[i] > second_largest){
-        second_largest = nums[i];
-    }
-    if(small > nums[i]){
-        second_smallest = small;
-        small = nums[i];
-    }
-    else if(nums[i] < second_smallest){
-        second_smallest = nums[i]
-    }
+for (let i = 0; i < nums.length; ++i) {
+  if (nums[i] > large) {
+    second_largest = large;
+    large = nums[i];
+  } else if (nums[i] > second_largest) {
+    second_largest = nums[i];
+  }
+  if (small > nums[i]) {
+    second_smallest = small;
+    small = nums[i];
+  } else if (nums[i] < second_smallest) {
+    second_smallest = nums[i];
+  }
 }
 
-console.log(second_largest,second_smallest);
+console.log(second_largest, second_smallest);
