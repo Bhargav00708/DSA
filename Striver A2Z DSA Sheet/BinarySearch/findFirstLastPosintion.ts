@@ -9,7 +9,7 @@ var searchRange = function (nums: number[], target: number) {
   if (nums[start] != target) {
     return [-1, -1];
   }
-  // Here we can use the end also because 
+  // Here we can use the end also because when both start and point on same index then above condition will break
   let firstReturn = start;
   end = nums.length - 1;
   while (start < end) {
@@ -26,5 +26,5 @@ console.log(searchRange([5, 7, 7, 8, 8, 10], 9));
 // nums[mid] >= target ? (end = mid) : (start = mid + 1);
 
 // Here both conditions are same and the only difference is that in first condition if 8 <= 8 then
-// start = mid + 1 will be called and in second condition end = mid will be called.
+// start = mid + 1 will be called and in second condition end = mid will be called for 8 >= 8.
 // first condition is useful for find the first element while second condition are useful to find the last element
