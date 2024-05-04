@@ -1,27 +1,29 @@
-function search(nums: number[], target: number): boolean {
-  let startPointer: number = 0;
-  let endPointer: number = nums.length - 1;
-  let mid: number = Math.floor((startPointer + endPointer) / 2);
-  while (startPointer <= endPointer) {
-    if (nums[mid] === target) {
-      return true;
+var search = function (nums: number[], target: number) {
+  let start = 0;
+  let end = nums.length - 1;
+  let mid = Math.floor((start + end) / 2);
+  while (start <= end) {
+    if (nums[mid] == target) {
+      return mid;
     }
-    if (nums[mid] >= nums[startPointer]) {
-      if (nums[mid] > target && nums[startPointer] <= target) {
-        endPointer = mid - 1;
+    if (nums[mid] >= nums[start]) {
+      // For arr = [8,8,10,11,12] & target = 8 (nums[start] <= target)
+      if (nums[mid] > target && nums[start] <= target) {
+        end = mid - 1;
       } else {
-        startPointer = mid + 1;
+        start = mid + 1;
       }
     } else {
-      if (target > nums[mid] && target <= nums[endPointer]) {
-        startPointer = mid + 1;
+      // For arr = [16,17,10,11,12] & target = 12 (target <= nums[end])
+      if (nums[mid] < target && target <= nums[end]) {
+        start = mid + 1;
       } else {
-        endPointer = mid - 1;
+        end = mid - 1;
       }
     }
-    mid = Math.floor((startPointer + endPointer) / 2);
+    mid = Math.floor((start + end) / 2);
   }
-  return false;
-}
+  return -1;
+};
 
-console.log(search([2, 5, 6, 0, 0, 1, 2], 2));
+console.log(search([1, 0, 1, 1, 1], 0));
