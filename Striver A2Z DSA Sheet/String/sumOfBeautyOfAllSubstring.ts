@@ -1,4 +1,5 @@
-// ! Same Technique as our  
+// ! Same Technique as our Object But here Map is faster
+// ! So it will work
 /**
  * @param {string} s
  * @return {number}
