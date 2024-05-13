@@ -1,4 +1,4 @@
-1. Generate Parantheses.
+1. Generate Parentheses.
 
 2. Combination sum 1
    (in which first pick all element of it's then in base case return it

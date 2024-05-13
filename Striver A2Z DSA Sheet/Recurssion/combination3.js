@@ -1,10 +1,10 @@
-function combinationSum(candidates: number[], target: number) {
-  var buffer: any = [];
-  var result: any = [];
+function combinationSum(candidates, target) {
+  var buffer = [];
+  var result = [];
   search(0, target);
-  return result;
+  return result;      
 
-  function search(startIdx: any, target: any) {
+  function search(startIdx, target) {
     if (target === 0) return result.push(buffer.slice());
     if (target < 0) return;
     if (startIdx === candidates.length) return;
