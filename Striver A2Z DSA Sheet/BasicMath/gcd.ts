@@ -4,11 +4,11 @@
 
 // ? Time Complexity: O(logmin(a,b)), where ɸ is 1.61.
 
-function gcd(a,b){
-    if (b == 0) {
-      return a;
-    }
-    return gcd(b, a % b);
+function gcd(a: number, b: number) {
+  if (b === 0) {
+    return a;
+  }
+  return gcd(b, a % b);
 }
 
-console.log(gcd(8,4));
+console.log(gcd(8, 4));

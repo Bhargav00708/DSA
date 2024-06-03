@@ -22,43 +22,41 @@
 //     spaceCount = spaceCount - 2;
 // }
 
-
 const raw = 9;
 const printNum = (raw + 1) / 2;
 let result = ``;
-for(let i = 0; i < raw; ++i){
-    result += printNum;
+for (let i = 0; i < raw; ++i) {
+  result += printNum;
 }
 console.log(result);
 
 let dummyPrintNum = printNum - 1;
 const flag = dummyPrintNum;
 let dummyResult = result.split("");
-let startPoint = 1; 
+let startPoint = 1;
 let endPoint = raw - 2;
 let flagOp = false;
-for(let i = 0; i < raw - 2 ; ++i){
-    let tempResult = dummyResult;
-    for(let j = startPoint; j <= endPoint; ++j){
-        tempResult[j] = String(dummyPrintNum);
-    }
-    console.log(tempResult.join(""));
-    dummyResult = tempResult;
-    if(startPoint < flag && !flagOp){
-        ++startPoint;
-        --endPoint;
-        --dummyPrintNum;
-    }
-    else{
-        flagOp = true;
-        --startPoint;
-        ++endPoint;
-        ++dummyPrintNum;
-    }
+for (let i = 0; i < raw - 2; ++i) {
+  let tempResult = dummyResult;
+  for (let j = startPoint; j <= endPoint; ++j) {
+    tempResult[j] = String(dummyPrintNum);
+  }
+  console.log(tempResult.join(""));
+  dummyResult = tempResult;
+  if (startPoint < flag && !flagOp) {
+    ++startPoint;
+    --endPoint;
+    --dummyPrintNum;
+  } else {
+    flagOp = true;
+    --startPoint;
+    ++endPoint;
+    ++dummyPrintNum;
+  }
 }
 result = ``;
-for(let i = 0; i < raw; ++i){
-    result += printNum;
+for (let i = 0; i < raw; ++i) {
+  result += printNum;
 }
 
 console.log(result);
