@@ -1,4 +1,4 @@
-// ? Here we have to itarate from the first with [0,1] and then [0,2] and then
+// ? Here we have to iterate from the first with [0,1] and then [0,2] and then
 // ? go on and we only have to insert element if it's arr[j] > currentVal
 
 function insertionSort(arr: Array<number>) {

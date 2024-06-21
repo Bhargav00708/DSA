@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesis = function (n: number) {
+const generateParenthesis = function (n: number) {
   let allResult: string[] = [];
   function myBracket(
     openBracket: number,
@@ -14,11 +14,11 @@ var generateParenthesis = function (n: number) {
       allResult.push(myString);
       return;
     }
-    // ! Here we are putting this condition because openbracket should always lesser then n.
+    // ! Here we are putting this condition because open bracket should always lesser then n.
     if (n > openBracket) {
       myBracket(openBracket + 1, closedBracket, myString + "(");
     }
-    // ! Here we are putting this condition because closedbracket should always be lesser then openbracket.
+    // ! Here we are putting this condition because closed bracket should always be lesser then open bracket.
     if (openBracket > closedBracket) {
       myBracket(openBracket, closedBracket + 1, myString + ")");
     }
@@ -27,4 +27,4 @@ var generateParenthesis = function (n: number) {
   return allResult;
 };
 
-console.log(generateParenthesis(3));
+console.log(generateParenthesis(2));

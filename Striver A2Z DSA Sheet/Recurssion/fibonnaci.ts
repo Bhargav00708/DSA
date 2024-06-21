@@ -38,11 +38,10 @@ function Fib(n:number):number {
     }
   }
    
-const n = 1;
+const n = 3;
 console.log(n + "th Fibonacci Number: " + Fib(n));
 
 // With Memoization.
-
 function fibonacci(n, memo = {}) {
     if (n in memo) {
       return memo[n];
