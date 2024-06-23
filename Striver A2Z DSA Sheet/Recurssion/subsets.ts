@@ -4,7 +4,7 @@ var subsets = function (nums: Array<number>) {
   let auxArr: Array<number> = [];
   var i = 0; // global vars
 
-  function recur(nums, i, auxArr) {
+  function recur(nums: Array<number>, i: number, auxArr: Array<number>) {
     if (i == nums.length) {
       res.push(auxArr);
       return;
@@ -24,7 +24,7 @@ var subsets = function (nums: Array<number>) {
   return res; // return the final 2d arr
 };
 
-console.log(subsets([1, 2, 3]));
+console.log(subsets([1, 2, 2, 3]));
 
 // // ! Array approach
 // var subsets = function (nums) {

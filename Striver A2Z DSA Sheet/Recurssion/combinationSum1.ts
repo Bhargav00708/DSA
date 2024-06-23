@@ -11,6 +11,12 @@ function combinationSum(candidates: number[], target: number) {
     buffer.push(candidates[startIdx]);
     search(startIdx, target - candidates[startIdx]);
     buffer.pop();
+    // while (
+    //   startIdx + 2 !== candidates.length &&
+    //   candidates[startIdx] === candidates[startIdx + 1]
+    // ) {
+    //   ++startIdx;
+    // }
     search(startIdx + 1, target);
   }
 }

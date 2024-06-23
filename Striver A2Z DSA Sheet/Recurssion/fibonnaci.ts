@@ -15,7 +15,7 @@
 // if(n === 1){
 //    answer.push(0);
 //    console.log(answer);
-   
+
 // }
 // else if(n === 2){
 //     answer.push(0);
@@ -30,25 +30,25 @@
 
 // ? Recurssion Approach.
 
-function Fib(n:number):number {
-    if (n <= 1) {
-      return n;
-    } else {
-      return Fib(n - 1) + Fib(n - 2);
-    }
+function Fib(n: number): number {
+  if (n <= 1) {
+    return n;
+  } else {
+    return Fib(n - 1) + Fib(n - 2);
   }
-   
+}
+
 const n = 3;
 console.log(n + "th Fibonacci Number: " + Fib(n));
 
 // With Memoization.
 function fibonacci(n, memo = {}) {
-    if (n in memo) {
-      return memo[n];
-    }
-    if (n <= 2) {
-      return 1;
-    }
-    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+  if (n in memo) {
     return memo[n];
   }
+  if (n <= 1) {
+    return n;
+  }
+  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+  return memo[n];
+}
