@@ -20,7 +20,7 @@ var searchRange = function (nums: number[], target: number) {
   return [firstReturn, endReturn];
 };
 
-console.log(searchRange([5, 7, 7, 8, 8, 10], 9));
+console.log(searchRange([5, 7, 7, 8, 8, 10], 8));
 
 // nums[mid] <= target ? (start = mid + 1) : (end = mid);
 // nums[mid] >= target ? (end = mid) : (start = mid + 1);

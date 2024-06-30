@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var maxDepth = function (s:string) {
+var maxDepth = function (s: string) {
   let maxCount = 0;
   let count = 0;
   for (let data of s) {

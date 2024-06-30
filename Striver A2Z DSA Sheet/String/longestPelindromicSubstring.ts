@@ -2,6 +2,10 @@
 
 var longestPalindrome = function (s: string) {
   let longest = "";
+
+  // here we are checking two scenarios index and their left and right
+  // and in second scenarion we are taking index and index + 1(means index-1,index+1) and their
+  // left right element
   const findLongestPalindrome = (str: string, i: number, j: number) => {
     while (i >= 0 && j < str.length && str[i] === str[j]) {
       i -= 1;

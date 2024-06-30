@@ -1,4 +1,4 @@
-var searchInsert = function (nums: number[], target: number) {
+var searchInsert = function (nums, target) {
   if (nums[0] >= target) {
     return 0;
   }

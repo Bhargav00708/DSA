@@ -4,7 +4,7 @@
  */
 
 // ! Here at the end we always find the peak element.
-var findPeakElement = function (nums:number[]) {
+var findPeakElement = function (nums: number[]) {
   let firstPointer = 0;
   let secondPointer = nums.length - 1;
   let mid = Math.floor((firstPointer + secondPointer) / 2);
@@ -25,4 +25,4 @@ var findPeakElement = function (nums:number[]) {
   return mid;
 };
 
-console.log(findPeakElement([1,2,1,3,5,6,4]));
+console.log(findPeakElement([1, 2, 1, 3, 5, 6, 4]));
