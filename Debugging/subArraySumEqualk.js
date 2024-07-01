@@ -1,6 +1,6 @@
 // ? We can use hashmap here.
 
-var subarraySum = function (nums: number[], k) {
+var subarraySum = function (nums, k) {
   let mapOp = new Map();
   mapOp.set(0, 1);
   let count = 0;

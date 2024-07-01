@@ -32,9 +32,9 @@
 //? third approach
 
 const nums: Array<number> = [1, 0, -9, 8, 67, 69, 70];
-let large: number = -Infinity;
+let large: number = nums[0];
 let second_largest: number = nums[0];
-let small: number = Infinity;
+let small: number = nums[0];
 let second_smallest: number = nums[0];
 
 for (let i = 0; i < nums.length; ++i) {

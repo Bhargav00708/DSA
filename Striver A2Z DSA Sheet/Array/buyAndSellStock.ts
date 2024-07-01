@@ -17,3 +17,5 @@ const maxProfit = function (prices: number[]) {
   }
   return maxPrice;
 };
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4]));

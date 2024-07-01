@@ -8,7 +8,7 @@ var threeSum = function (nums: number[]) {
     if (nums[i] > 0) {
       continue;
     }
-    if (i > 0 && nums[i] == nums[i - 1]) {
+    if (i > 0 && nums[i] === nums[i - 1]) {
       continue;
     }
     let j = i + 1;

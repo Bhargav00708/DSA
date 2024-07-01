@@ -15,12 +15,15 @@ const sortColors = function (nums: number[]) {
       case 1:
         mid++;
         break;
-      case 2:
+      case 2: {
         var temp = nums[high];
         nums[high] = nums[mid];
         nums[mid] = temp;
         high--;
         break;
+      }
     }
   }
 };
+
+console.log(sortColors([2, 0, 2, 1, 1, 0]));

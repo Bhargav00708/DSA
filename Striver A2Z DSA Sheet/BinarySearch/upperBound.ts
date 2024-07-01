@@ -1,5 +1,5 @@
 // [1,5,7,8,9] if x = 8
-// upper bound is 4 index arr[i] > x 
+// upper bound is 4 index arr[i] > x
 
 function upperBound(arr: number[], x: number, n: number) {
   let low = 0,

@@ -12,6 +12,7 @@ var merge = function (nums1: number[], m: number, nums2: number[], n: number) {
       nums1[k--] = nums2[j--];
     }
   }
+  console.log(nums1);
 };
 
-merge([1,2,3,0,0,0],3,[2,5,6],2);
+merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
