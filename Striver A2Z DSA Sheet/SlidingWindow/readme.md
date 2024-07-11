@@ -1,0 +1,1 @@
+Max consecutive ones and fruits into basket both have same type of logic.
