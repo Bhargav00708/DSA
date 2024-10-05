@@ -22,8 +22,8 @@ var maxProduct = function (nums: number[]) {
   return result;
 };
 
-maxProduct([2,3,-2,4]);
+console.log(maxProduct([2, 3, -2, 4]));
 
-// ? Here understand if we take min and max of [2,3] so we are getting min or max value till [2,3] 
-// ? if [2,3,-2] so we are getting min and max till [2,3,-2] 
+// ? Here understand if we take min and max of [2,3] so we are getting min or max value till [2,3]
+// ? if [2,3,-2] so we are getting min and max till [2,3,-2]
 // ? and we are taking min(n) or max(n) because of [-1,8](max)(8) [-1,-8](min)(-8)

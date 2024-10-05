@@ -1,5 +1,5 @@
 // here check if there is that number then increment j it will be maximum increment till i - 2 and then length - i
-// this trick will helpful for Finite characters like a,b,c,d or you have to use hash map 
+// this trick will helpful for Finite characters like a,b,c,d or you have to use hash map
 
 /**
  * @param {string} s

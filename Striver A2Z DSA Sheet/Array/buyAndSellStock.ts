@@ -3,7 +3,7 @@ const maxProfit = function (prices: number[]) {
   var firstPointer = 0;
   var secondPointer = 1;
   let maxPrice = 0;
-  while (firstPointer < prices.length) {
+  while (secondPointer < prices.length) {
     let priceDif = prices[secondPointer] - prices[firstPointer];
     if (priceDif > 0) {
       if (priceDif >= maxPrice) {

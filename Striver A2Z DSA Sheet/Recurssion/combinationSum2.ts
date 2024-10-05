@@ -43,6 +43,7 @@ function combinationSum(candidates: number[], target: number) {
     // ! here like if there is [1,2,2,3] so in right side we have to avoid that number so we directly jump to
     // ! index 2 and skipping index 1 and we only have to check till second last element that's why
     // ! take this condition i+2
+    // ! We can also use this nums[i] === nums[i + 1] no need to use i + 2;
     while (
       startIdx + 2 !== candidates.length &&
       candidates[startIdx] === candidates[startIdx + 1]

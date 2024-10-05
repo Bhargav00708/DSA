@@ -2,10 +2,10 @@
  * @param {number[]} nums
  * @return {number}
  */
-var singleNonDuplicate = function (nums:number[]) {
+var singleNonDuplicate = function (nums: number[]) {
   let start = 0;
   let end = nums.length - 1;
-  let mid:number = 0;
+  let mid: number = 0;
   while (start <= end) {
     mid = Math.floor((start + end) / 2);
     if (nums[mid] != nums[mid + 1] && nums[mid] != nums[mid - 1]) {
@@ -20,4 +20,4 @@ var singleNonDuplicate = function (nums:number[]) {
   return nums[mid];
 };
 
-console.log(singleNonDuplicate([1,1,2,3,3,4,4,8,8]));
+console.log(singleNonDuplicate([1, 1, 2, 3, 3, 4, 4, 8, 8]));

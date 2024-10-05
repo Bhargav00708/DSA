@@ -101,7 +101,7 @@ class BinarySearchTree {
     return data;
   }
 
-  // left, right, right
+  // left, right, root
   dfsPostOrder() {
     let data = [];
     let current = this.root;

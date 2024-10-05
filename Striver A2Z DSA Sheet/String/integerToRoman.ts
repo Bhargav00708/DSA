@@ -1,5 +1,5 @@
-var intToRoman = function (num:number) {
-  let globalArray:any = [
+var intToRoman = function (num: number) {
+  let globalArray: any = [
     ["I", 1],
     ["IV", 4],
     ["V", 5],
@@ -14,7 +14,7 @@ var intToRoman = function (num:number) {
     ["CM", 900],
     ["M", 1000],
   ];
-  let globalString:string = ``;
+  let globalString: string = ``;
   while (num > 0) {
     let flag = false;
     for (let i = 0; i < globalArray.length; i++) {
@@ -34,7 +34,6 @@ var intToRoman = function (num:number) {
 };
 
 console.log(intToRoman(3749));
-
 
 // 2nd solution
 

@@ -142,16 +142,15 @@ console.log(obj1);
 
 // We can also write this program for reverse linked list
 
-// var reverseList = function (head) {
-//   if(!head)
-//       {
-//           return null;
-//       }
-//   let reverseList = new ListNode(head.val);
-//   while (head.next != null) {
-//       head = head.next;
-//       let newNode = new ListNode(head.val,reverseList);
-//       reverseList = newNode;
-//   }
-//   return reverseList;
-// };
+var reverseList = function (head) {
+  if (!head) {
+    return null;
+  }
+  let reverseList = new ListNode(head.val);
+  while (head.next != null) {
+    head = head.next;
+    let newNode = new ListNode(head.val, reverseList);
+    reverseList = newNode;
+  }
+  return reverseList;
+};

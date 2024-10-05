@@ -5,7 +5,7 @@ function combinationSum(candidates: number[], target: number) {
   return result;
 
   function search(startIdx: any, target: any) {
-    if (target === 0) return result.push(buffer.slice());
+    if (target === 0) return result.push([...buffer]);
     if (target < 0) return;
     if (startIdx === candidates.length) return;
     buffer.push(candidates[startIdx]);
